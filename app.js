@@ -21,11 +21,14 @@ const deleteBtn = document.createElement('span');
 
 
 bookName.textContent = value;
-deleteBtn.textContent = 'delete';
+deleteBtn.textContent = 'izdzēst';
+
+
+bookName.classList.add('name');
+deleteBtn.classList.add('delete');
 
 
 li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);
-
 });
