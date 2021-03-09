@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" />
-    <title>JavaScript DOM Tutorials</title>
+    <script src="app.js"></script>
+    <title>JavaScript</title>
 </head>
 <body>
 <div id="wrapper">
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Filmas</h1>
-    	<p>Atrast filmas</p>
+        <p>Atrast filmas</p>
         <form id="search-books">
             <input type="text" placeholder="Meklēt filmas..." />
         </form>
@@ -21,29 +22,42 @@
 	    	<ul>
 	    		<li>
 	    			<span class="name">Name of the Wind</span>
-	    			<span class="delete">izdzēst</span>
-	    		</li>
-	    		<li>
-	    			<span class="name">The Wise Man's Fear</span>
-	    			<span class="delete">izdzēst</span>
+	    			<span class="delete">Izdzēst</span>
 	    		</li>
 	    		<li>
 	    			<span class="name">Kafka on the Shore</span>
-	    			<span class="delete">izdzēst</span>
+	    			<span class="delete">Izdzēst</span>
 	    		</li>
 	    		<li>
 	    			<span class="name">The Master and the Margarita</span>
-	    			<span class="delete">izdzēst</span>
+	    			<span class="delete">Izdzēst</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">Izdzēst</span>
 	    		</li>
 	    	</ul>
 	    </div>
 	    <form id="add-book">
-	    	<input type="text" placeholder="Pievienot filmu..." />
-	    	<button>pievienot</button>
+        <input type="checkbox" id="hide" />
+        <label for="hide">Paslēpt visas filmas</label>
+	    	<input type="text" placeholder="Pievienot Filmu..." />
+	    	<button>Pievienot</button>
 	    </form>
-
+    <div id="tabbed-content">
+        <ul class="tabs">
+        <li data-target="#about" class="active">Par</li>
+        <li data-target="#contact">Kontakts</li>
+        </ul>
+        <div class="panel active" id="about">
+        <p>Aptuveni cilnes saturs ...</p>
+        <p>Kaut kāda informācija 1.</p>
+        </div>
+        <div class="panel" id="contact">
+        <p>Cilnes Kontakts saturs ...</p>
+        <p>Vel kaut kāda informācija 2.</p>
+        </div>
     </div>
-    <script src="app.js"></script>
-
+    </div>
 </body>
 </html>
