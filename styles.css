@@ -146,3 +146,8 @@ line-height: 52px;
 #tabbed-content .panel.active{
     display: block;
 }
+
+.gif{
+    margin-top: -25%;
+    margin-left: 70%;
+}
