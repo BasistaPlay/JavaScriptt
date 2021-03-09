@@ -1,5 +1,7 @@
+
 const list = document.querySelector('#book-list ul');
 const forms = document.forms;
+
 
 list.addEventListener('click', (e) => {
 if(e.target.className == 'delete'){
@@ -19,7 +21,6 @@ const li = document.createElement('li');
 const bookName = document.createElement('span');
 const deleteBtn = document.createElement('span');
 
-
 bookName.textContent = value;
 deleteBtn.textContent = 'izdzēst';
 
@@ -31,4 +32,14 @@ deleteBtn.classList.add('delete');
 li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);
+});
+
+
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+if(hideBox.checked){
+    list.style.display = "none";
+} else {
+    list.style.display = "initial";
+}
 });
